@@ -7,7 +7,7 @@ sudo: false
 notifications:
   - email: false
 install:
-  - npm install
+  - mv .env.example .env && npm install
 script:
   - npm run compile
   - npm run smctest
