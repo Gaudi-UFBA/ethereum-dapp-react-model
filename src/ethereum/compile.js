@@ -6,4 +6,4 @@ require("dotenv").config();
 
 fs.removeSync(buildPath);
 
-compile(process.env.SMC_NAME + ".sol");
+compile(process.env.REACT_APP_SMC_NAME + ".sol");

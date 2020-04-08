@@ -1,5 +1,5 @@
 {
-  "name": "smartcontracts-for-egov",
+  "name": "ethereum-dapp-react-model",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000/",

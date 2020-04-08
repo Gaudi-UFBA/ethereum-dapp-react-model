@@ -2,7 +2,10 @@ require("dotenv").config();
 const env = process.env;
 const Web3 = require("web3");
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const provider = new HDWalletProvider(env.MNEMONIC_WORDS, env.PROVIDER_LINK);
+const provider = new HDWalletProvider(
+  env.REACT_APP_MNEMONIC_WORDS,
+  env.REACT_APP_PROVIDER_LINK
+);
 const web3 = new Web3(provider);
 
 module.exports = {
@@ -12,11 +15,11 @@ module.exports = {
       // Deploy configuration
       .deploy({
         data: contract.bytecode,
-        arguments: [env.BC_ACCOUNT]
+        arguments: [env.REACT_APP_BC_ACCOUNT]
       })
       .send({
         gas: env.GAS,
-        from: env.BC_ACCOUNT
+        from: env.REACT_APP_BC_ACCOUNT
       });
     console.log(result.options.address);
   }
