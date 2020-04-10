@@ -7,7 +7,9 @@ class Card extends Component {
       handleNewMessage,
       onChangeIndex,
       handleGetMessage,
-      message
+      message,
+      loader,
+      mtmskwarning
     } = this.props;
     return (
       <div className="row">
@@ -24,13 +26,18 @@ class Card extends Component {
                     onChange={onChangeMessage.bind(this)}
                   />
                   <label htmlFor="message">New Message</label>
-                  <div className="col s2">
+                  <div className="col s4 l2">
                     <button
                       className="btn waves-effect waves-light col s12"
                       onClick={handleNewMessage}
                     >
                       Add
                     </button>
+                  </div>
+                  <div className={"col s12 " + mtmskwarning}>
+                    <label className="red-text">
+                      Please click the fox face to install and use Metamask.
+                    </label>
                   </div>
                 </div>
               </div>
@@ -47,7 +54,7 @@ class Card extends Component {
                   <label htmlFor="index">Index</label>
                   <div className="col s10">
                     <button
-                      className="btn waves-effect waves-light col s2"
+                      className="btn waves-effect waves-light col s4 l2"
                       onClick={handleGetMessage}
                     >
                       Get
@@ -55,8 +62,12 @@ class Card extends Component {
                   </div>
                 </div>
 
-                <p>Message:</p>
-                <ul className="collection">
+                <div className={"progress col s8 offset-s2 " + loader}>
+                  <div className="indeterminate"></div>
+                </div>
+
+                <p className="col s12">Message:</p>
+                <ul className="collection col s12">
                   <li className="collection-item">{message}</li>
                 </ul>
               </div>
