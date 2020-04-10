@@ -32,10 +32,10 @@ $ npm install
 
 ## Folder structure
 
-After the steps, your project should look like this:
+After the steps above, your project should look like this:
 
 ```
-react-model/
+ethereum-dapp-react-model/
   node_modules/
   public/
     favicon.ico
@@ -114,11 +114,11 @@ I know you're tired of reading, so I'll give a command that you can run if you h
 $ npm smctest
 ```
 
-The automatic tests are located in `src/test/` and the automatic tests example is in the file `TestContract.test.js`. But we'll talk about testing again.
+The automatic tests are located in `src/test/` and the automatic tests example is in the file `TestContract.test.js`. But we'll talk more about testing later.
 
 ### Getting started with Metamask
 
-> If you already have the Metamask app and Metamask account, you can skip this step: **"Getting started with Infura"**
+> If you already have the Metamask app and Metamask account, you can skip this step and go to: **"Getting started with Infura"**
 
 Be calm, we're almost there. To be able to interact with Ethereum network as a client, you need to have a wallet, and the **Metamask** is an application that offers you a client where you can buy new ethers (the Ethereum cryptocurrency) or use test ethers through an Ethereum testing network.
 
@@ -138,7 +138,7 @@ To implement a Smart Contract in an Ethereum network, you must use a Ethereum no
 - Access the project by clicking it;
 - Go to **Settings** tab;
 - There you will see the **Keys** section;
-- In **"ENDPOINTS"** use the dropdown to select the network you want to use. For now I advise you to use the **Rinkeby** testnet, because is very stable.
+- In **"ENDPOINTS"** use the dropdown to select the network you want to use. For now I advise you to use the **Rinkeby** testnet, because is very stable;
 - Then you copy the url that starts like this `https://rinkeby.infura.io/......` and keep it for the next section.
 
 ### Setting up .env file
@@ -159,7 +159,7 @@ REACT_APP_CONTRACT_ADDRESS=""
 The folder structure now (disregarding what is inside the folders) is like this:
 
 ```
-react-model/
+ethereum-dapp-react-model/
   node_modules/
   public/
   src/
