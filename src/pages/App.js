@@ -43,7 +43,7 @@ class App extends Component {
       if (message) {
         message = '"' + message + '"';
       } else {
-        message = "[Nenhuma mensagem para este índice]";
+        message = "[There is no message for this index]";
       }
       this.setState({ message });
     }
