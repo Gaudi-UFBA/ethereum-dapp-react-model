@@ -223,5 +223,5 @@ $ npm start
 Then you can open http://localhost:3000 to see the application running in the browser. After each modification saved, the page will reload.
 
 <p align="center">
-  <img src="https://i.imgur.com/ZZjbL5z.png" alt="image of the process using the smart contract example">
+  <img src="https://i.imgur.com/9qloADW.png" alt="image of the process using the smart contract example">
 </p>
