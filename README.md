@@ -219,3 +219,7 @@ If you got here alive, that is, without any error or other difficulty, you are a
 ```bash
 $ npm start
 ```
+
+Then you can open http://localhost:3000 to see the application running in the browser. After each modification saved, the page will reload.
+
+<a href="https://imgur.com/rHqmkbJ"><img src="https://i.imgur.com/rHqmkbJ.png" title="source: imgur.com" /></a>
