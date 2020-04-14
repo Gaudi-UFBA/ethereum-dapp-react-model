@@ -20,11 +20,12 @@ This is a blockchain dapp (Decentralized Application) model using React.js and E
   - [Folder structure](#folder-structure)
   - [Compiling the Smart Contract](#compiling-the-smart-contract)
   - [Deploying the Smart Contract](#deploying-the-smart-contract)
+    - [I can't wait...](#i-cant-wait)
     - [Getting started with Metamask](#getting-started-with-metamask)
     - [Getting started with Infura](#getting-started-with-infura)
-    - [Setting up .env file](#setting-up-.env-file)
+    - [Setting up .env file](#setting-up-env-file)
     - [Getting testing ether](#getting-testing-ether)
-    - [Deploy](deploy)
+    - [Deploy](#deploy)
   - [Running the app model](#running-the-app-model)
 
 # Getting started
