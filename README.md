@@ -11,6 +11,22 @@ This is a blockchain dapp (Decentralized Application) model using React.js and E
 
 [![Build Status](https://travis-ci.org/Levysantiago/ethereum-dapp-react-model.svg?branch=master)](https://travis-ci.org/Levysantiago/ethereum-dapp-react-model)
 
+# Summary
+
+- [Getting Started](#getting-started)
+  - [Versions](#versions)
+  - [Cloning Repository](#cloning-repository)
+  - [Installing dependences](#installing-dependences)
+  - [Folder structure](#folder-structure)
+  - [Compiling the Smart Contract](#compiling-the-smart-contract)
+  - [Deploying the Smart Contract](#deploying-the-smart-contract)
+    - [Getting started with Metamask](#getting-started-with-metamask)
+    - [Getting started with Infura](#getting-started-with-infura)
+    - [Setting up .env file](#setting-up-.env-file)
+    - [Getting testing ether](#getting-testing-ether)
+    - [Deploy](deploy)
+  - [Running the app model](#running-the-app-model)
+
 # Getting started
 
 Here are some instructions that show how to set up the project and run on your local machine for development and testing purposes.
@@ -228,7 +244,7 @@ Then you can open http://localhost:3000 to see the application running in the br
 
 After running the project, you'll see a form with two inputs. The first is to set a new message to the Smart Contract, the second is to get some message that was stored in the contract. So these are the steps you can do to see the process working:
 
-1. You type any message in the first input and click "ADD";
+1. You type any message in the first input and click **"ADD"**;
 2. You will see a Metamask tab opening waiting for your confirmation and showing how much ethers you will pay for this transaction;
 3. After confirming the transaction, the rinkeby testnet will process this transaction and after some seconds publish the transaction in the network blockchain ledger;
-4. Once the transaction was accepted, you can access the first message ('0') of the contract, that will be the message that you typed. Then after new messages you can search by number 1, 2, 3 and so on. If you access a message that is not saved in the contract, the app will return [There is no message for this index].
+4. Once the transaction was accepted, you can access the first message `('0')` of the contract, that will be the message that you typed. Then after new messages you can search by number 1, 2, 3 and so on. If you access a message that is not saved in the contract, the app will return `[There is no message for this index]`.
