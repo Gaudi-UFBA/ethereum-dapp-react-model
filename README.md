@@ -223,5 +223,12 @@ $ npm start
 Then you can open http://localhost:3000 to see the application running in the browser. After each modification saved, the page will reload.
 
 <p align="center">
-  <img src="https://i.imgur.com/9qloADW.png" alt="image of the process using the smart contract example">
+  <img src="https://i.imgur.com/DHkzqvW.png" alt="image of the process using the smart contract example">
 </p>
+
+After running the project, you'll see a form with two inputs. The first is to set a new message to the Smart Contract, the second is to get some message that was stored in the contract. So these are the steps you can do to see the process working:
+
+1. You type any message in the first input and click "ADD";
+2. You will see a Metamask tab opening waiting for your confirmation and showing how much ethers you will pay for this transaction;
+3. After confirming the transaction, the rinkeby testnet will process this transaction and after some seconds publish the transaction in the network blockchain ledger;
+4. Once the transaction was accepted, you can access the first message ('0') of the contract, that will be the message that you typed. Then after new messages you can search by number 1, 2, 3 and so on. If you access a message that is not saved in the contract, the app will return [There is no message for this index].
