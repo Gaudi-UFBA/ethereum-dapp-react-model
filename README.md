@@ -1,13 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 Using model [React-app-model](https://github.com/Levysantiago/react-app-model).
 
-# Blockchain & React dapp model
+# Blockchain: React dapp model with Infura
 
 <p align="center">
   <img src="https://i.imgur.com/2t1Lh88.png" alt="project banner">
 </p>
 
-This is a blockchain dapp (Decentralized Application) model using React.js and Ethereum blockchain. In this model I'm using the Web3.js to communicate with the Ethereum blockchain. I also created a simple Smart Contract using Solidity language as an example only to show the process of compiling and deploying a Smart Contract. The objective of this repository is to offer a dapp model that has almost all tools needed to create a website integrating React.js and Web3.js in order to facilitate the creation of a dapp.
+This is a **blockchain dapp (Decentralized Application) model** using [React.js](https://pt-br.reactjs.org/) and [Ethereum blockchain](https://ethereum.org/). In this model I'm using the [Web3.js](https://web3js.readthedocs.io/) to communicate with the Ethereum blockchain and the [Infura.io](https://infura.io/) node to **deploy smart contracts** to a testnet, to get your smart contract **running almost like in real Ethereum network**. I also created a simple Smart Contract using Solidity language as an example only to show the **process of compiling and deploying** a Smart Contract. The objective of this repository is to offer a dapp model that has almost all tools needed to **create a website integrating React.js and Web3.js** in order to facilitate the creation of a dapp and also to **show how we can deploy our smart contract to a test network**, so you can see all the transactions happening and if you want, you can also use the [Etherscan API](https://etherscan.io/apis), which is **something really fun to play with**.
 
 [![Build Status](https://travis-ci.org/Levysantiago/ethereum-dapp-react-model.svg?branch=master)](https://travis-ci.org/Levysantiago/ethereum-dapp-react-model)
 
@@ -27,6 +27,7 @@ This is a blockchain dapp (Decentralized Application) model using React.js and E
     - [Getting testing ether](#getting-testing-ether)
     - [Deploy](#deploy)
   - [Running the app model](#running-the-app-model)
+  - [Running automated tests](#running-automated-tests)
 
 # Getting started
 
@@ -132,7 +133,7 @@ ethereum/
 I know you're tired of reading, so I'll give a command that you can run if you have already done all the steps above. At this time, you are able to run the automatic tests of the Smart Contract, to do so, you can run:
 
 ```bash
-$ npm smctest
+$ npm run smctest
 ```
 
 The automatic tests are located in `src/test/` and the automatic tests example is in the file `TestContract.test.js`. But we'll talk more about testing later.
@@ -249,3 +250,34 @@ After running the project, you'll see a form with two inputs. The first is to se
 2. You will see a Metamask tab opening waiting for your confirmation and showing how much ethers you will pay for this transaction;
 3. After confirming the transaction, the rinkeby testnet will process this transaction and after some seconds publish the transaction in the network blockchain ledger;
 4. Once the transaction was accepted, you can access the first message `('0')` of the contract, that will be the message that you typed. Then after new messages you can search by number 1, 2, 3 and so on. If you access a message that is not saved in the contract, the app will return `[There is no message for this index]`.
+
+## Running automated tests
+
+As we saw, this is the command to run the automated tests:
+
+```bash
+$ npm run smctest
+```
+
+In the test file I'm using the [ganache-cli](https://github.com/trufflesuite/ganache-cli), a development tool from [Truffle suite](https://github.com/trufflesuite). This tool simulates an ethereum client, so you can build your applications without needing to spend real ethers. To run the tests, I'm using the testing tool [mocha framework](https://mochajs.org/).
+
+## Building your own smart contracts
+
+To start building your own smart contracts, the Ethereum provides a really awesome tool, which is the [Remix](http://remix.ethereum.org). This is an online tool that you can use to build smart contracts, deploy it locally and test the functions manually. But also you can connect it to your local project file, or the `contracts/` folder that contains all your smart contract implementations. The model already includes the Remix local tool, that is the [remix-ide](https://github.com/ethereum/remix-ide).
+
+So what you need to do is to go to the contracts folder and then starts the `remix-ide`
+
+```bash
+$ cd src/ethereum/contracts/
+$ remix-ide
+```
+
+So the Remix-ide will start at http://localhost:8080. And after accessing this url, you will click in "Connect" when the model panel appear, as you can see bellow. For more details of how to use the remix, [see the documentation](https://remix-ide.readthedocs.io/en/latest/layout.html).
+
+<p align="center">
+<img src="https://i.imgur.com/nNcART1.gif" alt="Remix-ide connecting" width="100%">
+</p>
+
+# Author
+
+- Levy Santiago
