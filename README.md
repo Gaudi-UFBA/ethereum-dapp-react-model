@@ -28,6 +28,9 @@ This is a **blockchain dapp (Decentralized Application) model** using [React.js]
     - [Deploy](#deploy)
   - [Running the app model](#running-the-app-model)
   - [Running automated tests](#running-automated-tests)
+  - [Building your own smart contracts](#building-your-own-smart-contracts)
+- [Author](#author)
+- [Knowledges](#knowledges)
 
 # Getting started
 
@@ -281,3 +284,15 @@ So the Remix-ide will start at http://localhost:8080. And after accessing this u
 # Author
 
 - Levy Santiago
+
+# Knowledges
+
+- [Node.js docs](https://nodejs.org/en/docs/);
+- [React.js docs](https://pt-br.reactjs.org/docs/getting-started.html);
+- [Ethereum getting started](https://ethereum.org/pt-br/what-is-ethereum/)
+- [Web3.js docs](https://web3js.readthedocs.io/);
+- [Metamask docs](https://docs.metamask.io/guide/);
+- [Ganache-cli](https://github.com/trufflesuite/ganache-cli);
+- [Mocha framework](https://mochajs.org/);
+- [Infura.io docs](https://infura.io/docs);
+- [Remix-ide docs](https://remix-ide.readthedocs.io/en/latest/layout.html)
