@@ -289,10 +289,10 @@ So the Remix-ide will start at http://localhost:8080. And after accessing this u
 
 - [Node.js docs](https://nodejs.org/en/docs/);
 - [React.js docs](https://pt-br.reactjs.org/docs/getting-started.html);
-- [Ethereum getting started](https://ethereum.org/pt-br/what-is-ethereum/)
+- [Ethereum getting started](https://ethereum.org/pt-br/what-is-ethereum/);
 - [Web3.js docs](https://web3js.readthedocs.io/);
 - [Metamask docs](https://docs.metamask.io/guide/);
 - [Ganache-cli](https://github.com/trufflesuite/ganache-cli);
 - [Mocha framework](https://mochajs.org/);
 - [Infura.io docs](https://infura.io/docs);
-- [Remix-ide docs](https://remix-ide.readthedocs.io/en/latest/layout.html)
+- [Remix-ide docs](https://remix-ide.readthedocs.io/en/latest/layout.html).
