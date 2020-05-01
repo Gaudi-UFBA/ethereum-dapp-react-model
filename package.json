@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "compile": "node ./src/ethereum/compile.js",
     "deploy": "node ./src/ethereum/deploy.js",
-    "smctest": "mocha src/test"
+    "smctest": "./node_modules/mocha/bin/mocha src/test"
   },
   "eslintConfig": {
     "extends": "react-app"
