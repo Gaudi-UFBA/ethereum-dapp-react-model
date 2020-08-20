@@ -9,18 +9,18 @@ const provider = new HDWalletProvider(
 const web3 = new Web3(provider);
 
 module.exports = {
-  deploy: async contract => {
+  deploy: async (contract) => {
     // Create a new contract and define ABI access
     const result = await new web3.eth.Contract(JSON.parse(contract.interface))
       // Deploy configuration
       .deploy({
         data: contract.bytecode,
-        arguments: [env.REACT_APP_BC_ACCOUNT]
+        arguments: [env.REACT_APP_BC_ACCOUNT],
       })
       .send({
-        gas: env.GAS,
-        from: env.REACT_APP_BC_ACCOUNT
+        gas: env.REACT_APP_GAS,
+        from: env.REACT_APP_BC_ACCOUNT,
       });
     console.log(result.options.address);
-  }
+  },
 };
