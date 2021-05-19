@@ -29,7 +29,6 @@ This is a **blockchain dapp (Decentralized Application) model** using [React.js]
   - [Running the app model](#running-the-app-model)
   - [Running automated tests](#running-automated-tests)
   - [Building your own smart contracts](#building-your-own-smart-contracts)
-- [Author](#author)
 - [Knowledges](#knowledges)
 
 # Getting started
@@ -280,10 +279,6 @@ So the Remix-ide will start at http://localhost:8080. And after accessing this u
 <p align="center">
 <img src="https://i.imgur.com/nNcART1.gif" alt="Remix-ide connecting" width="100%">
 </p>
-
-# Author
-
-- Levy Santiago
 
 # Knowledges
 
